@@ -1,0 +1,863 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(170, 121, 29);
+  z-index: -99;
+}
+
+.content {
+  margin-top: 72px;
+}
+.Main {
+  background: url("../images/wood.jpg");
+  background-size: 100% 100%;
+  z-index: -1;
+}
+/* *************************************brand name div style***************************** */
+.Header h1 {
+  font-size: 40px;
+  font-family: "Abril Fatface", cursive;
+
+  font-family: "Dancing Script", cursive;
+
+  font-family: "Merriweather", serif;
+
+  position: relative;
+
+  background: url("../images/wood1.jpg");
+  background-size: 100% 100%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.Header h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1 !important;
+  text-shadow: -1px 1px 2px #000, -2px 2px 2px #000, -4px 3px 2px #000,
+    -5px 4px 10px #000, -6px 5px 12px #000;
+}
+
+/* ************************************brand name div style***************************** */
+
+/* *******************header navbar div style***************************** */
+.Header {
+  font-size: 1rem;
+  z-index: -99;
+
+  background-size: 100% 100%;
+}
+
+.navbar {
+  background-color: rgba(238, 141, 15, 0.486);
+
+  box-sizing: border-box;
+}
+.navbar-btn {
+  color: white !important;
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+  transition: 0.5s;
+  margin-right: 10px;
+  position: relative;
+}
+.navbar-btn:hover {
+  color: #1670f0 !important;
+}
+.navbar-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #1670f0 !important;
+  border-bottom: 2px solid #1670f0 !important;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.5s;
+}
+.navbar-btn:hover::before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.navbar-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 3px;
+  background: black !important;
+
+  transform: scale(0);
+
+  transition: 0.5s;
+}
+.navbar-btn:hover::after {
+  transform: scale(1);
+}
+/* *******************Login and signup navbar div style***************************** */
+.blue2 {
+  position: relative;
+  font-family: "Dancing Script", cursive;
+  text-decoration: none;
+  color: #1670f0 !important;
+  margin-right: 10px;
+  background-color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.blue2::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: 1s;
+  background: rgba(255, 255, 255, 0.062);
+}
+.blue2:hover::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 100%;
+  transform: translateX(0%);
+
+  background: rgba(255, 255, 255, 0.123);
+}
+
+.blue2 span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  animation: animate5 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate5 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.blue2 span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  animation: animate6 2s linear infinite;
+}
+@keyframes animate6 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.blue2 span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  animation: animate7 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate7 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.blue2 span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  animation: animate8 2s linear infinite;
+}
+@keyframes animate8 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* *******************Login navbar div style***************************** */
+
+/* *******************header navbar div style***************************** */
+
+/* *******************center div style***************************** */
+
+.carouserl-image {
+  height: 89vh;
+
+  border-radius: 10px;
+}
+/* .diamond {
+ 
+} */
+.item {
+  width: 200px;
+  height: 200px;
+  background: white;
+  transition: 0.5s;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+}
+
+/* *********************************************center div style************************************************** */
+
+/* ********************************************service div style************************************************* */
+
+.service {
+  padding: 20px;
+}
+.service-data {
+  background-color: rgb(6, 1, 65);
+  height: 300px;
+}
+.headings p {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2;
+  color: white;
+  margin-top: 20px;
+}
+.details p,
+.details h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+.details {
+  padding-bottom: 40px;
+}
+
+.house {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.house .service-data2 h1,
+.Office .service-data2 h1,
+.room .service-data2 h1 {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+
+.house .service-data2 p,
+.Office .service-data2 p,
+.room .service-data2 p {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+
+.service-img img {
+  padding: 30px;
+  border-radius: 50%;
+}
+.service-data2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Office {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1483232539664-d89822fb5d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.room {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1553345723-5d0630e0886c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* **********************************************************Service div style***************************** */
+
+/************************************************* Complted work strt******************************* */
+section .project {
+  width: 100%;
+  height: 100vh !important;
+}
+.project .project-div .project-img img {
+  height: 550px;
+  border-radius: 20px;
+}
+.project .project-div .project-data h3,
+.project .project-div .project-data p {
+  color: white;
+  text-shadow: 1px 2px 5px black;
+}
+
+/************************************************* Complted work end******************************* */
+
+/*  ********************************************** Review start*********************************** */
+.reviews-div {
+  width: 100%;
+  height: 100vh;
+  background: #0c002b;
+}
+.headings h1 {
+  color: white;
+  font-weight: 600;
+}
+
+.headings p {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.box {
+  text-align: center;
+  background: rgb(170, 121, 29);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.box:hover {
+  background: #1670f0;
+}
+
+.box p {
+  color: white;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -60px !important;
+}
+.carousel-indicators li {
+  background-color: #1670f0;
+}
+.box a {
+  position: relative;
+}
+.box a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.box h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.box h2 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #e9dfdfe3;
+  margin-bottom: 20px;
+}
+
+/*  ********************************************** Review end*********************************** */
+
+/*  ********************************************** Contact us start*********************************** */
+.Contact-us {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1591474200742-8e512e6f98f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.contact {
+  border-radius: 20px;
+  background: rgba(247, 243, 243, 0.5);
+  background-size: cover;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.contact h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.Contact-us .contact .input-box {
+  position: relative;
+  margin: 0px 20px;
+}
+
+.Contact-us .contact .input-box input,
+.Contact-us .contact .input-box textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  border: none;
+  outline: none !important;
+  border-bottom: 1px solid white;
+  background: transparent;
+}
+.input-box label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: white;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -32px;
+  left: 0;
+  font-size: 12px;
+  color: #0c002b;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit .btn {
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #0c002b;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.submit .btn:hover {
+  color: white;
+  background: rgb(161, 107, 5);
+}
+.input-box textarea::placeholder {
+  color: white;
+}
+
+/*  ********************************************** Contact us end*********************************** */
+
+/*  ********************************************** About us start*********************************** */
+.about {
+  width: 100%;
+  background: linear-gradient(
+      120deg,
+      rgba(221, 122, 8, 0.445),
+      rgba(11, 14, 156, 0.445)
+    ),
+    url("https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-size: 100% 100%;
+  position: relative;
+  padding: 10px;
+  height: 100vh;
+}
+.aboutLine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Dancing Script", cursive;
+}
+.aboutLine h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  text-shadow: -2px 5px 10px black;
+}
+.aboutLine p {
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  text-shadow: -2px 5px 8px black;
+}
+
+/*  ********************************************** Footer start*********************************** */
+footer {
+  background-color: #0c002b;
+  height: 75vh;
+  width: 100%;
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+.last-container {
+  padding: 20px 50px;
+}
+.MRD img {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+}
+.footer-data {
+  padding: 10px 50px;
+}
+.footer-data h1 {
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+.footer-data p {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.footer-data h1,
+.footer-data p {
+  color: white !important;
+}
+.social_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.social_icon ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.social_icon i {
+  color: white;
+}
+.social_icon ul li {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.social_icon ul li:hover .fa {
+  transition: 1s;
+  transform: rotateY(360deg);
+}
+.social_icon ul li::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  border: 1px solid white;
+}
+.social_icon ul li:hover::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -20%;
+  left: -20%;
+
+  transition: 2s;
+  border: 1px solid white;
+}
+.social_icon ul li:nth-child(1)::before {
+  background-color: #3b5998;
+}
+.social_icon ul li:nth-child(2)::before {
+  background-color: #00acee;
+}
+.social_icon ul li:nth-child(3)::before {
+  background-color: white;
+}
+.social_icon ul li:nth-child(4)::before {
+  background-color: #0e76a8;
+}
+.social_icon ul li:nth-child(3):hover i {
+  color: red;
+}
+/*  ********************************************** Footer end*********************************** */
+
+/*  ********************************************** About us end*********************************** */
+
+/*  ********************************************** Modals style us end*********************************** */
+.modal-content {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+.modal-title {
+  color: white;
+}
+.modal-style {
+  position: relative;
+}
+
+.modal-style input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+  outline: none !important;
+  border-bottom: 1px solid white;
+  background: transparent;
+}
+.modal-style label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: white;
+  padding: 10px 0;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.modal-style input:focus ~ label,
+.modal-style input:valid ~ label {
+  top: -32px;
+  left: 0;
+  font-size: 12px;
+  color: white;
+}
+.extra {
+  color: white;
+}
+
+/*  ********************************************** Modals style us end*********************************** */
+/*  ********************************************** Media quaries start*********************************** */
+/*  ********************************************** Media quaries start*********************************** */
+/*  ********************************************** Media quaries start*********************************** */
+/*  ********************************************** Media quaries start*********************************** */
+/*  ********************************************** Media quaries start*********************************** */
+/*  ********************************************** Media quariesstart*********************************** */
+
+@media (max-width: 768px) {
+  .Header h1 {
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+  }
+  .navbar-btn,
+  .blue2 {
+    text-align: center;
+  }
+  .diamond {
+    display: none;
+  }
+  .Main {
+    height: 70vh;
+  }
+  .Main
+    .container-fluid
+    .row
+    .main
+    .carousel-fade
+    .carousel-inner
+    .carousel-item
+    img {
+    height: 60vh;
+  }
+  /*  ********************************************** service start*********************************** */
+
+  .service-data {
+    height: 200px;
+  }
+  .headings p {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2;
+    color: white;
+    margin-top: 20px;
+  }
+  .details p,
+  .details h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  /*  ********************************************** service start*********************************** */
+  /************************************************* Complted work strt******************************* */
+  section .project {
+    width: 100%;
+    height: 65vh !important;
+  }
+  .project .project-div .project-img img {
+    height: 350px;
+    border-radius: 20px;
+  }
+  .project .project-div .project-data h3,
+  .project .project-div .project-data p {
+    color: black;
+    text-shadow: 1px 2px 5px black;
+    z-index: 1;
+  }
+
+  /************************************************* Complted work end******************************* */
+
+  /*  ********************************************** Review start*********************************** */
+  .reviews-div {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 40px;
+  }
+  .headings h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px !important;
+  }
+
+  .headings p {
+    font-size: 1rem;
+  }
+
+  .box {
+    margin: 10px;
+  }
+
+  .box a img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /*  ********************************************** Review end*********************************** */
+  /*  ********************************************** Contact us start*********************************** */
+  .Contact-us {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 20px;
+  }
+  .contact h1 {
+    font-size: 25px;
+  }
+  .Contact-us .contact .input-box input,
+  .Contact-us .contact .input-box textarea {
+    font-size: 14px;
+  }
+  .input-box label {
+    font-size: 14px;
+  }
+  /*  ********************************************** Contact us start*********************************** */
+  /*  ********************************************** Footer start*********************************** */
+  footer {
+    height: max-content;
+  }
+  .footer-data h1 {
+    font-size: 25px;
+  }
+
+  .footer-data p {
+    font-size: 15px;
+  }
+
+  .social_icon {
+    margin-top: 20px;
+  }
+
+  .social_icon ul li {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    margin-right: 15px;
+  }
+  /*  ********************************************** Footer start*********************************** */
+  /*  ********************************************** about start*********************************** */
+
+  .about {
+    height: fit-content;
+  }
+
+  .aboutLine h1 {
+    font-size: 30px;
+  }
+  .aboutLine p {
+    font-size: 15px;
+  }
+  /*  ********************************************** aboutstart*********************************** */
+}
+
+/*  ********************************************** Media quaries start*********************************** */
+
+/*  ********************************************** Media quaries start*********************************** */
+
+/*  ********************************************** Media quaries start*********************************** */
+
+/*  ********************************************** Media quaries start*********************************** */
+
+/*  ********************************************** Media quaries start*********************************** */
+/*  ********************************************** Media quaries start*********************************** */
+
+@media (max-width: 450px) {
+  .Main {
+    margin-top: 20vh;
+    height: 60vh !important;
+  }
+  .Header h1 {
+    font-size: 20px;
+    float: left;
+    display: flex;
+  }
+  .Main
+    .container-fluid
+    .row
+    .main
+    .carousel-fade
+    .carousel-inner
+    .carousel-item
+    img {
+    height: 60vh;
+  }
+  section .project {
+    height: 70vh !important;
+    padding-bottom: 30px;
+  }
+  .project .project-div .project-img img {
+    height: 300px !important;
+  }
+}
