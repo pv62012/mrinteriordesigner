@@ -810,7 +810,7 @@ footer {
   /*  ********************************************** about start*********************************** */
 
   .about {
-    height: fit-content;
+    height: 100vh;
   }
 
   .aboutLine h1 {
